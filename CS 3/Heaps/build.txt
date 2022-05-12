@@ -1,0 +1,11 @@
+int [] build(int [] data){ \\O(nlogn)
+	for(int i:data){
+		insert(i);
+	}
+}
+
+int[] build(int [] data){	\\O(n)
+	for(int i= heap_size/2; i>=1; i++){
+		percolateDown(i);
+	}
+}

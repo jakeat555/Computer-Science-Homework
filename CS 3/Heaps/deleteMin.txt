@@ -1,0 +1,22 @@
+int deleteMin(int x){ \\O(log n)
+	int returnMe = H[1];
+	H[1]=H[heap_size];
+	H[heap_size]--;
+	perculateDown(1);
+	return returnMe;
+}
+
+void perculateDown(int i){ O(log n)
+	while(left(i)<=heap_size){
+		int min= left(i);
+		if(right(i)<=heap_size && H[right(i)]<H[left(i)]){
+			min=right(i);
+		}
+		if(H[i]<H[min]){
+			break;
+		}
+		else
+			swap(H[i],H[min]);
+			i=min;
+	}
+}

@@ -1,0 +1,20 @@
+void dykstrasAlgotithm(int S, int [] adj){
+	for(int i=0; i<=n-1; i++){
+		d[i]= some big number
+		pre[i] = -1 //since there can't be negative weights
+	}
+	d[S] = 0;
+	//build a priority Q, a heap. with d[i] as keys
+	while(Q!= empty){
+		int i=Q.deleteMin();
+		Vertex v = adj[i];
+		while(v!= null){
+			if(d[v.id]>(d[i]+v.weight)){
+				d[v.id] = d[i] + v.weight;
+				pre[v.id] = i;
+				decreaseKey(v.id,d[v.id]);
+			}
+			v=v.next;
+		}
+	}
+}

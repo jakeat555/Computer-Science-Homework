@@ -1,0 +1,15 @@
+
+void insert(int x){
+	i=0;
+	while(i<m){
+		k=probe(x,i);
+		if(T[k].flag!=1){
+			T[k].key = x;
+			T[k].flag=1;
+			return;
+		}
+		else{
+			i++;
+		}
+	}
+}

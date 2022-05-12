@@ -1,0 +1,8 @@
+void remove(int x){
+	int k = hash(x);
+	Element p = T[k];
+	while(p	!=null && p!= x){
+		p=p.next;
+	}
+	
+}

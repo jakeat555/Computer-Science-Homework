@@ -1,0 +1,15 @@
+int search(int x){
+	int i =0;
+	while(i<m){
+		if(T[k].flag == 1 && T[k].key==x){
+			return k;
+		}
+		if(T[k].flag==0){
+			return -1;
+		}
+		else{
+			i++;
+		}
+	}
+	return -1;
+}

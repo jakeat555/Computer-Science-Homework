@@ -1,0 +1,15 @@
+M is from the input
+Vertex [] adj = new Vertex[n];
+for(int i =0; i < n-1; i++){
+	adj[i]=null;
+}
+for(int i= 0; i<n-1; i++){
+	for(int j = 0; j<n-1){
+		if(M[i][j]==1){
+			vertex v = new Vertex(i);
+			v.next = adj[i];
+			adj[i] = vl
+		}
+	}
+	
+}

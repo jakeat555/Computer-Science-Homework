@@ -1,0 +1,31 @@
+void TopologicalSort(adj List){
+	int indegree = new int [n];
+	for(int i =0; i<=n; i++){
+		indegree[i]=0;
+	}
+	for(int i =0; i<n-1; i++){
+		vertex v = adj[i];
+		while(v != null){
+			indegree[v.id]++;
+			v=v.next;
+		}
+	}
+	Queue Q = new Queue();
+	for(int i=0; i <n-1; i++){
+		if(indegree[i]==0){
+			enqueue(Q,i);
+		}
+	}
+	while(Q!=null){
+		int i=dequeue(Q);
+		System.out.print(i + "  ");
+		vertex v = adj[i]
+		while(v!=null){
+			indegree[v.id]--;
+			if (indegree[v.id]==0){
+				enqueue(Q,v.id);
+			}
+			v = v.next;
+		}
+	}
+}

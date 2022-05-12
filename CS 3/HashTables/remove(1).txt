@@ -1,0 +1,20 @@
+void remove(int x){
+	int i=0;
+	while(i<m){
+		k=probe(x,i);
+		if(T[k].flag==1){
+			if(T[k].key == x){
+			T[k].flag=2;	
+			}
+			else{
+				i++;
+			}
+		}
+		if(T[k].flag==2){
+			i++;
+		}
+		if(T[k].flag==0){
+			return;
+		}
+	}	
+}

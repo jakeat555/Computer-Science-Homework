@@ -1,0 +1,33 @@
+void quickSort(int [] array, int low, int high){
+	if(low>= high{
+		return;
+	}
+	else{
+		i = partition(array,low,high);
+		quicksort(array,i+1,high);
+		quicksort(array,low,i-1);
+	}
+}
+
+int partition(int [] A, int low, int high){
+	m  = high - low +1;
+	int [] B = new int[m];
+	int [] C = new int[m];
+	int pivot = A[high];
+	int i =0;
+	int j =0;
+	for(int k=low; k<high-1; i++){
+		if(A[k]<= pivot){
+			B[i]=A[k];
+			i++;
+		}
+		else{
+			C[i]=A[k];
+			j++;
+		}
+	}
+	copy(B[0...i-1], A[low...low+i-1]);
+	A[low+i]=pivot;
+	copy(C[0...j-1], A[low+1+1...high-1])
+	return low+i;q
+}

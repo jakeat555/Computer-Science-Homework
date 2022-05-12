@@ -1,0 +1,12 @@
+boolean search(int x){
+	int k= hash(x);
+	Elemt p =T[k]:
+	while (p!=null && p.key!=x){
+		p=p.next;
+	}
+	if(p==null){
+		return false;
+	}
+	else
+		retrun true;
+}

@@ -1,0 +1,27 @@
+int partition(int [] A, int low, int high){
+	int i= low;
+	int k = high-1;
+	int pivot=A[high];
+	while(1==1)
+		while(A[i]<pivot){
+			i++;
+			if(i=high){
+				return i;
+			}
+		}
+		while(A[k]>pivot){
+			k--;
+			if(k=low-1){
+				swap(A[high],A[low]);
+				return low;
+			}
+		}
+		if(i<k){
+			swap(A[i],A[k]);
+		}
+		else{
+			swap(A[i],A[high]);
+			return i;
+		}
+	}
+}

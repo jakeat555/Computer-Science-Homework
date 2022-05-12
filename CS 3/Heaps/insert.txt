@@ -1,0 +1,10 @@
+void insert(int x){
+	heap_size++;
+	H[heap_size] = x;
+	int i =heap_size;
+	while(H[i]<H[i/2] && i>1)
+	{
+		swap(H[i],H[1/2]);
+		i=i/2;
+	}
+}

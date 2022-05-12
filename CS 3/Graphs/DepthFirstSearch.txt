@@ -1,0 +1,13 @@
+DFS_visit(int S){
+	color[s] = blue;
+	System.out.print(s+" ");
+	int v = adj[s];
+	while(v != null){
+		if(color[v.id]==white){
+			pre[v.id] =s;
+			DFS_visit(v.id);
+		}	
+		v = v.next;
+	}
+	color[s] = red;
+}

@@ -1,0 +1,6 @@
+void insert(int x){
+	int k = hash(x);
+	Element p = new Element(x);
+	q.next=T[k];
+	T[k]=q;
+}
