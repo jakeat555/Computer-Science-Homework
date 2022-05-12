@@ -1,0 +1,28 @@
+push 23
+push 8
+push 888
+pop
+push 34
+push 56
+push 1
+push 323
+pop
+push 999
+push 1000
+push 1001
+pop
+push 22
+pop
+push 987
+push 345
+push 234
+pop
+pop
+pop
+push 100
+push 200
+push 340
+pop
+push 987
+push 345
+pop
